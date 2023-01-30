@@ -61,7 +61,7 @@
     "vitest": "^0.28.3"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "eslint --cache --fix",
-    "*.warn": "prettier --write"
+    "src/**/*.{ts,tsx,js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
   }
 }
