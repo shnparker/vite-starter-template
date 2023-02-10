@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { ErrorBoundary } from 'react-error-boundary';
-import { QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter } from 'react-router-dom';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { ErrorBoundary } from 'react-error-boundary'
+import { BrowserRouter } from 'react-router-dom'
 
-import './index.css';
+import App from './App'
+import './index.css'
 
 const queryClient = new QueryClient({
   queryCache: new QueryCache({
@@ -15,7 +15,7 @@ const queryClient = new QueryClient({
         // some toast library
       }
 
-      console.log(error);
+      console.log(error)
     },
   }),
   defaultOptions: {
@@ -26,7 +26,7 @@ const queryClient = new QueryClient({
       retry: 0,
     },
   },
-});
+})
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -42,4 +42,4 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       </QueryClientProvider>
     </ErrorBoundary>
   </React.StrictMode>
-);
+)

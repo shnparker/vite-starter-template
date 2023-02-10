@@ -46,10 +46,33 @@ module.exports = {
         ]
       },
       typescript: true
-    }
+    },
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
+    'import/order': [
+      'error',
+      {
+        groups: [
+          ["external", "builtin"],
+          "internal",
+          ["sibling", "parent"],
+          "index"
+        ],
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'internal',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['internal'],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        "newlines-between": "always"
+      },
+    ],
   },
 }
