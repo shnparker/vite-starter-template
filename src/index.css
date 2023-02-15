@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 html {
-    @apply h-full bg-gray-50
+  @apply h-full bg-gray-50;
 }
 
 body {
-    @apply h-full
+  @apply h-full;
 }
 
 #root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    @apply h-full;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  @apply h-full;
 }

@@ -9,6 +9,7 @@ Since this project is based on [Vite](https://vitejs.dev/), it is suggested you 
 To learn more about the technologies used in this site template, see the following resources:
 
 **Project Scaffolding**
+
 - [TypeScript](https://www.typescriptlang.org/) - I don't know how people write plain JS anymore
 - [ESLint](https://eslint.org/) - Enforcement of coding rules
 - [Prettier](https://prettier.io/) - Autoformatting code
@@ -16,6 +17,7 @@ To learn more about the technologies used in this site template, see the followi
 - [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling Framework
 
 **Frontend Libraries**
+
 - [Heroicons](https://heroicons.com/) - Icon library from TailwindLabs
 - [Tailwind CSS](https://tailwindcss.com) - The official Tailwind CSS documentation
 - [Headless UI](https://headlessui.dev) - The official Headless UI documentation
@@ -23,6 +25,7 @@ To learn more about the technologies used in this site template, see the followi
 - [Formik](https://formik.org/) - Easy React Form Handling
 
 **Testing**
+
 - [Vitest](https://vitest.dev/) - New testing framework based on Vite
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - The best testing library there is
 
@@ -51,4 +54,3 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 ## Customizing
 
 You can start editing this site by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
