@@ -19,9 +19,8 @@
     "format": "prettier --write . --loglevel warn",
     "format:check": "prettier --check . --loglevel warn",
     "test": "vitest",
-    "test:ci": "vitest run --coverage --ci",
     "test:watch": "vitest --watch",
-    "coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage",
     "prepare": "husky install"
   },
   "dependencies": {
