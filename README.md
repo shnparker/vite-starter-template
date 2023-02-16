@@ -1,6 +1,6 @@
 # react-starter-template
 
-This template allows me to rapidly spin up spikes or prototypes for React SPA's in the configuration that I most prefer to work in.
+A template allowing for rapid development of React SPA projects based on Vite.
 
 Since this project is based on [Vite](https://vitejs.dev/), it is suggested you read the docs to familiarise yourself with how it serves locally, runs hot reloading, bundles files, handles env variables, etc. It is also a good idea to read the docs of any other listed tools you are unfamiliar with.
 
