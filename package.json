@@ -18,9 +18,10 @@
     "lint:check": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write . --loglevel warn",
     "format:check": "prettier --check . --loglevel warn",
-    "test": "vitest",
-    "test:watch": "vitest --watch",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
+    "prepush": "yarn test && yarn lint && yarn format",
     "prepare": "husky install"
   },
   "dependencies": {
