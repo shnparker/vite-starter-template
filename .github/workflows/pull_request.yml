@@ -42,7 +42,9 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup/
 
-      - name: Test and report coverage
-        uses: ArtiomTr/jest-coverage-report-action@v2
-        with:
-          package-manager: yarn
+      - name: Run the tests
+        shell: bash
+        run: yarn run test:coverage
+
+      - name: Comment coverage on PR
+        uses: davelosert/vitest-coverage-report-action@v1
