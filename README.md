@@ -1,4 +1,4 @@
-# react-starter-template
+# vite-starter-template
 
 A template allowing for rapid development of React SPA projects based on Vite.
 

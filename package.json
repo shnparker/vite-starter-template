@@ -26,7 +26,7 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
-    "prepush": "yarn test && yarn lint && yarn format",
+    "prepush": "yarn lint && yarn format && yarn test",
     "prepare": "husky install"
   },
   "dependencies": {
