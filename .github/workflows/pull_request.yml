@@ -48,3 +48,5 @@ jobs:
 
       - name: Comment coverage on PR
         uses: davelosert/vitest-coverage-report-action@v1
+        with:
+          vitest-config-path: './vite.config.js'

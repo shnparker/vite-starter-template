@@ -37,14 +37,14 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup/
 
-      - name: Find current PR number
-        uses: jwalton/gh-find-current-pr@v1
+      - name: Run the tests
+        shell: bash
+        run: yarn run test:coverage
 
-      - name: Test and report coverage
-        uses: ArtiomTr/jest-coverage-report-action@v2
+      - name: Comment coverage on PR
+        uses: davelosert/vitest-coverage-report-action@v1
         with:
-          package-manager: yarn
-          prnumber: ${{ steps.findPr.outputs.number }}
+          vitest-config-path: './vite.config.js'
 
   build:
     runs-on: ubuntu-latest
