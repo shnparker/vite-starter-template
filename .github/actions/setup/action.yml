@@ -1,0 +1,15 @@
+name: 'Setup other actions'
+description: 'Initialize environment and install dependencies for other actions'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+        cache: 'yarn'
+
+    - name: install dependencies
+      shell: bash
+      run: yarn install --frozen-lockfile  --ignore-engines

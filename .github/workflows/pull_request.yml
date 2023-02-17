@@ -1,14 +1,16 @@
-name: push-main
+name: pull-request
 
 on:
-  workflow_dispatch:
-  push:
+  pull_request:
     branches:
       - main
 
 jobs:
   verify:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ci-${{ github.ref_name }}-verify
+      cancel-in-progress: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -30,31 +32,17 @@ jobs:
       pull-requests: write
       contents: write
     runs-on: ubuntu-latest
+    concurrency:
+      group: ci-${{ github.ref_name }}-test
+      cancel-in-progress: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup environment
         uses: ./.github/actions/setup/
-
-      - name: Find current PR number
-        uses: jwalton/gh-find-current-pr@v1
 
       - name: Test and report coverage
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           package-manager: yarn
-          prnumber: ${{ steps.findPr.outputs.number }}
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup environment
-        uses: ./.github/actions/setup/
-
-      - name: Build the app
-        shell: bash
-        run: yarn run build
