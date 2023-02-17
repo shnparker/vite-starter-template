@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:shnparker/react-starter-template.git"
+    "url": "git@github.com:shnparker/vite-starter-template.git"
   },
   "author": {
     "name": "Shane Parker",
