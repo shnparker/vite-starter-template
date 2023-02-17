@@ -2,13 +2,18 @@
   "name": "react-starter-template",
   "private": true,
   "license": "MIT",
-  "author": "Shane Parker",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:shnparker/react-starter-template.git"
+  },
+  "author": {
+    "name": "Shane Parker",
+    "email": "hey@shnparker.com",
+    "url": "https://shnparker.com",
+    "github": "shnparker"
   },
   "description": "A template allowing for rapid development of React SPA projects based on Vite.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
