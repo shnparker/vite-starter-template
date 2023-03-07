@@ -18,6 +18,8 @@ To learn more about the technologies used in this site template, see the followi
 - [Husky + Lint Staged](https://prettier.io/docs/en/precommit.html) - Pre-commit hooks for ESLint & Prettier
 - [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling Framework
 - [Renovate](https://renovatebot.com/) - Automated dependency updates
+- [GitHub Actions](https://docs.github.com/en/actions) - Automated CI/CD
+- [Mend](https://docs.mend.io/en-US/bundle/integrations/page/mend_for_github_com.html) - Security scanning
 
 **Frontend Libraries**
 
