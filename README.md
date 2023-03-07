@@ -23,8 +23,6 @@ To learn more about the technologies used in this site template, see the followi
 - [Heroicons](https://heroicons.com/) - Icon library from TailwindLabs
 - [Tailwind CSS](https://tailwindcss.com) - The official Tailwind CSS documentation
 - [Headless UI](https://headlessui.dev) - The official Headless UI documentation
-- [React Query](https://tanstack.com/query/latest/docs/react/overview) - Amazing data fetching library based on hooks
-- [Formik](https://formik.org/) - Easy React Form Handling
 
 **Testing**
 
