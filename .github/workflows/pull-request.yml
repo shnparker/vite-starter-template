@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  VITE_APP_API_URL: ${{ vars.STAGING_API_URL }}
+
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -26,7 +29,7 @@ jobs:
         shell: bash
         run: yarn run format:check
 
-  test:
+  unit-test:
     permissions:
       checks: write
       pull-requests: write
@@ -42,11 +45,6 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup/
 
-      - name: Run the tests
+      - name: Run unit tests
         shell: bash
-        run: yarn run test:coverage
-
-      - name: Comment coverage on PR
-        uses: davelosert/vitest-coverage-report-action@v1
-        with:
-          vitest-config-path: './vite.config.js'
+        run: yarn run test

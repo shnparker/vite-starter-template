@@ -12,19 +12,18 @@ To learn more about the technologies used in this site template, see the followi
 
 **Project Scaffolding**
 
-- [TypeScript](https://www.typescriptlang.org/) - I don't know how people write plain JS anymore
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
 - [ESLint](https://eslint.org/) - Enforcement of coding rules
 - [Prettier](https://prettier.io/) - Autoformatting code
-- [Husky + Lint Staged](https://prettier.io/docs/en/precommit.html) - Precommit hooks for ESLint & Prettier
+- [Husky + Lint Staged](https://prettier.io/docs/en/precommit.html) - Pre-commit hooks for ESLint & Prettier
 - [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling Framework
+- [Renovate](https://renovatebot.com/) - Automated dependency updates
 
 **Frontend Libraries**
 
 - [Heroicons](https://heroicons.com/) - Icon library from TailwindLabs
 - [Tailwind CSS](https://tailwindcss.com) - The official Tailwind CSS documentation
 - [Headless UI](https://headlessui.dev) - The official Headless UI documentation
-- [React Query](https://tanstack.com/query/latest/docs/react/overview) - Amazing data fetching library based on hooks
-- [Formik](https://formik.org/) - Easy React Form Handling
 
 **Testing**
 
@@ -39,7 +38,7 @@ Install dependencies
 yarn
 ```
 
-Next, create a `.env.local` file in the root of your project and set the `VITE_APP_` variable to your site's public URL:
+Next, create a `.env` file in the root of your project and set the `VITE_APP_` variable to your site's public URL:
 
 ```bash
 VITE_APP_API_URL
