@@ -1,10 +1,10 @@
-import { render } from '@testing-library/react'
+import { render } from "@testing-library/react";
 
-import App from '@/App'
+import App from "@/App";
 
-describe('App', () => {
-  it('renders hello world', () => {
-    const { getByText } = render(<App />)
-    expect(getByText(/Hello World/s)).toBeInTheDocument()
-  })
-})
+describe("App", () => {
+  it("renders hello world", () => {
+    const { getByText } = render(<App />);
+    expect(getByText(/Hello World/s)).toBeInTheDocument();
+  });
+});
