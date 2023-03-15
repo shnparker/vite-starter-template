@@ -4,5 +4,3 @@ public
 coverage
 node_modules
 dist
-prettier.config.cjs
-.eslintrc.cjs
